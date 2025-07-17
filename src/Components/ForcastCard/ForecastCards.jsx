@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import img2 from "../../assets/img2.jpg";
 import rainImg from "../../assets/img3.jpg";
+import "animate.css";
 
 export default function ForecastCards({ forecastDays }) {
   return (
