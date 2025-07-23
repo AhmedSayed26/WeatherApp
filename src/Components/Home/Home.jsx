@@ -66,7 +66,7 @@ export default function Home() {
       className="flex flex-col md:flex-row justify-center items-center gap-x-4 "
     >
       <div
-        className={` my-4 md:my-0 bg-white/20 backdrop-blur-md w-[450px] p-2 text-center space-y-5.5 rounded-2xl transition-all duration-700 ${
+        className={`my-4 md:my-0 bg-white/20 backdrop-blur-md w-[450px] p-2 text-center space-y-5.5 rounded-2xl transition-all duration-1000 ${
           showResultDiv
             ? "-translate-x-[0] md:-translate-x-[10%] "
             : "translate-x-0 opacity-100"
