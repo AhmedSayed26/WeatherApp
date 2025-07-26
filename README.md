@@ -2,7 +2,7 @@
 
 A responsive and modern weather forecasting app built with **React**, styled using **Tailwind CSS**, and powered by real-time weather APIs. The app displays current weather conditions and forecasts in a clean and user-friendly interface.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://your-live-demo-link.com) <!-- Replace with actual link if available -->
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge)](weather-app-nine-sigma-92.vercel.app) <!-- Replace with actual link if available -->
 
 ---
 
