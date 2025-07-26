@@ -31,6 +31,5 @@ A responsive and modern weather forecasting app built with **React**, styled usi
 
 ---
 
-## live demo
-- weather-app-nine-sigma-92.vercel.app
+
 
