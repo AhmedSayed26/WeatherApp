@@ -11,14 +11,15 @@ export default function ForecastCards({ forecastDays }) {
         const bgImage = day.day.condition.text.toLowerCase().includes("rain")
           ? rainImg
           : img2;
-
+        const textColorClass =
+          bgImage === rainImg ? "text-white" : "text-black";
         return (
           <motion.div
             key={day.date}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.3, duration: 0.3 }}
-            className="p-4 rounded h-[80px] bg-cover bg-center bg-no-repeat shadow-lg transition-all flex justify-between hover:scale-105"
+            className={`${textColorClass} p-2 rounded h-[80px] bg-cover bg-center bg-no-repeat shadow-lg transition-all flex justify-between hover:scale-105`}
             style={{ backgroundImage: `url(${bgImage})` }}
           >
             <div className="flex items-center gap-4">

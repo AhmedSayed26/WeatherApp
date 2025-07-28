@@ -57,16 +57,17 @@ export default function Home() {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     minHeight: "100vh",
+    minWidth: "100vw",
     transition: "all 1s",
   };
 
   return (
     <div
       style={BodyImg}
-      className="flex flex-col md:flex-row justify-center items-center gap-x-4 "
+      className="w-full h-full flex flex-col md:flex-row justify-center items-center gap-x-4 "
     >
       <div
-        className={`my-4 md:my-0 bg-white/20 backdrop-blur-md w-[450px] p-2 text-center space-y-5.5 rounded-2xl transition-all duration-1000 ${
+        className={`my-4 md:my-0 bg-white/20 backdrop-blur-md w-[410px] p-2 text-center space-y-5.5 rounded-2xl transition-all duration-1000 ${
           showResultDiv
             ? "-translate-x-[0] md:-translate-x-[10%] "
             : "translate-x-0 opacity-100"
@@ -101,7 +102,7 @@ export default function Home() {
 
       {showResultDiv && weatherData && (
         <>
-          <div className="bg-white/30 backdrop-blur-md rounded-xl p-6 text-center text-white space-y-4 transition-all duration-700 animate-fade-in w-[450px] animate__animated animate__backInRight animate__slow">
+          <div className="my-4 md:my-0 space-y-7 bg-white/20 backdrop-blur-md rounded-xl p-6 text-center text-white transition-all duration-700 animate-fade-in w-[410px] animate__animated animate__backInRight animate__slow">
             <h2 className="text-3xl font-bold text-black">
               {weatherData.location.name}
             </h2>
