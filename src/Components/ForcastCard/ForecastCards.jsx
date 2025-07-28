@@ -6,7 +6,7 @@ import "animate.css";
 
 export default function ForecastCards({ forecastDays }) {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 m-auto">
       {forecastDays?.map((day, index) => {
         const bgImage = day.day.condition.text.toLowerCase().includes("rain")
           ? rainImg
@@ -22,7 +22,7 @@ export default function ForecastCards({ forecastDays }) {
             className={`${textColorClass} p-2 rounded h-[80px] bg-cover bg-center bg-no-repeat shadow-lg transition-all flex justify-between hover:scale-105`}
             style={{ backgroundImage: `url(${bgImage})` }}
           >
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
               <img
                 src={day.day.condition.icon}
                 alt="icon"

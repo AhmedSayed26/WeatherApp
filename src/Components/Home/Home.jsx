@@ -64,10 +64,10 @@ export default function Home() {
   return (
     <div
       style={BodyImg}
-      className="w-full h-full flex flex-col md:flex-row justify-center items-center gap-x-4 "
+      className="w-full min-h-screen flex flex-col md:flex-row justify-center items-center gap-4 px-2"
     >
       <div
-        className={`my-4 md:my-0 bg-white/20 backdrop-blur-md w-[410px] p-2 text-center space-y-5.5 rounded-2xl transition-all duration-1000 ${
+        className={`w-full max-w-[410px] my-4 md:my-0 bg-white/20 backdrop-blur-md p-2 text-center space-y-5.5 rounded-2xl transition-all duration-1000 ${
           showResultDiv
             ? "-translate-x-[0] md:-translate-x-[10%] "
             : "translate-x-0 opacity-100"
@@ -102,7 +102,7 @@ export default function Home() {
 
       {showResultDiv && weatherData && (
         <>
-          <div className="my-4 md:my-0 space-y-7 bg-white/20 backdrop-blur-md rounded-xl p-6 text-center text-white transition-all duration-700 animate-fade-in w-[410px] animate__animated animate__backInRight animate__slow">
+          <div className="my-4 md:my-0 space-y-7 bg-white/20 backdrop-blur-md rounded-xl p-6 text-center text-white transition-all duration-700 animate-fade-in w-[375px]  md:w-[410px] animate__animated animate__backInRight animate__slow">
             <h2 className="text-3xl font-bold text-black">
               {weatherData.location.name}
             </h2>
@@ -116,7 +116,7 @@ export default function Home() {
               <p>{weatherData.current.condition.text}</p>
             </div>
           </div>
-          <div className="p-6 text-center  space-y-6 transition-all duration-700 animate-fade-in w-[450px]">
+          <div className="p-6 text-center  space-y-6 transition-all duration-700 animate-fade-in w-[420px] md:w-[450px]">
             <ForecastCards
               key={weatherData.location.name}
               forecastDays={weatherData?.forecast?.forecastday}
